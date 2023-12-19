@@ -56,7 +56,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
 		<form id="formulario" method="post" action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]); ?>">
 			<h1>Excluir usuário</h1>
-			<p>Tem certeza que deseja excluir esse usuário?</p>
+			<p>Tem certeza que deseja excluir esse usuário do programa?</p>
 			<input id="id" type="hidden" name="id" value="<?php echo $_GET['id']  ?>">
 
 			<input class="botoes" id="btn-excluir" type="submit" name="submit" value="Excluir">
