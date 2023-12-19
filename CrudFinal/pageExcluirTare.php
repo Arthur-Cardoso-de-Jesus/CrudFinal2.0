@@ -13,8 +13,6 @@ include("config.php");
 // verificar se o usuário confirmou a exclusão
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
-	// Verifica se foi marcado sim
-	if ($_POST["confirmacao"] == "sim") {
 		// excluir o usuário do banco de dados
 		$id = $_POST["id"];
 		$sql = "DELETE FROM tbTarefa WHERE pkIdTare=$id";
@@ -24,11 +22,8 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 			echo "<script> location.href='pageTarefas.php'; </script>";
 		} else {
 			echo "Erro ao excluir tarefa: " . mysqli_error($conn);
-		}
 		exit();
-	} else {
-		echo "<script> alert('Exclusão cancelada.'); </script>";
-	}
+}
 }
 
 // exibir a mensagem de confirmação
@@ -59,14 +54,6 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 			<h1>Excluir tarefa</h1>
 			<p>Tem certeza que deseja excluir essa tarefa?</p>
 			<input id="id" type="hidden" name="id" value="<?php echo $_GET['id']  ?>">
-			<div id="divRadio">
-				<div id="radioEsquerda">
-					<input class="radio" type="radio" name="confirmacao" value="sim">Sim<br>
-				</div>
-				<div id="radioDireita">
-					<input class="radio" type="radio" name="confirmacao" value="nao" checked>Não<br>
-				</div>
-			</div>
 			<input class="botoes" id="btn-excluir" type="submit" name="submit" value="Excluir">
 			<input class="botoes" sid="Menu" type="button" onclick="location.href='pageTarefas.php'" Value="Menu">
 		</form>

@@ -53,7 +53,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<link rel="stylesheet" type="text/css" href="css/pageEditaTare.css">
-	<title>Editar usuário</title>
+	<title>Editar tarefa</title>
 </head>
 
 <body>
@@ -67,11 +67,12 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
 	<div id="conteudo">
 		<form id="formulario" method="post" action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]); ?>">
-			<h1 id="titulo-formulario">Editar usuário:</h1>
+			<h1 id="titulo-formulario">Editar tarefa:</h1>
 			<input id="id" type="hidden" name="id" value="<?php echo $_GET['id'] ?>">
 			<input class="input" placeholder="Titulo:" type="text" name="tituloTare" value="<?php echo $titulo; ?>">
 			<input class="input" placeholder="Descrição:" type="type" name="descricaoTare" value="<?php echo $descricao; ?>">
 			<input class="input" placeholder="Data:" type="date" name="dataTare" value="<?php echo $data; ?>">
+			<h4>Tarefa concluida:<h4>
 			<div id="divRadio">
 				<div id="rdEsquerda">
 					<input id="concluidaSim" class="radio" type="radio" name="concluida" value="Sim">
