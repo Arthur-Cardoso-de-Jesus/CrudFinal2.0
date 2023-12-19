@@ -86,7 +86,7 @@
                     echo "<th>Descrição</th>";
                     echo "<th>Data</th>";
                     echo "<th>Concluida</th>";
-                    echo "<th>Alterar</tr>";
+                    echo "<th colspan='2'>Alterar</tr>";
                     echo "</tr>";
 
                     while ($row = mysqli_fetch_assoc($res)) {
@@ -97,7 +97,8 @@
                         echo "<td>" . $row['descricaoTare'] . "</td>";
                         echo "<td style='width:10em'>" .  data($row['dataTare']) . "</td>";
                         echo "<td>" . $row['concluida'] . "</td>";
-                        echo "<td><a href='pageEditarTare.php?id=" . $row['pkIdTare'] . ">Editar</a> | <a 'href='pageExcluirTare.php?id=" . $row['pkIdTare'] . "'>Excluir</a></td>";
+                        echo "<td style='width:6'><a href='pageEditarTare.php?id=" . $row['pkIdTare'] . "'>Editar</a></td>";
+                        echo "<td style='width:6'><a href='pageExcluirTare.php?id=" . $row['pkIdTare'] . "'>Excluir</a></td>";
                         echo "</tr>";
                     }
                 }

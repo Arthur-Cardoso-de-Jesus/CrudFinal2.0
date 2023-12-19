@@ -118,7 +118,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 			</div>
 			<div id="botoes">
 				<input class="botoesForm" id="btn-editar" type="submit" name="submit" value="Editar">
-				<input class="botoesForm" sid="Menu" type="button" onclick="location.href='pageTarefas.php'" Value="Menu">
+				<input class="botoesForm" sid="Menu" type="button" onclick="location.href='pageUsuarios.php'" Value="Menu">
 			</div>
 		</form>
 	</div>

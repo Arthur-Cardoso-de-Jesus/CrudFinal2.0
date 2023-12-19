@@ -10,8 +10,8 @@
 <div id="conteudo">
     <form action="login.php" id="formulario" method="POST">
         <h1>LOGIN</h1>
-        <input class="entrada" id="email" name="email" type="text" placeholder="Email">
-        <input class="entrada" id="senha" name="senha" type="senha" placeholder="Senha">
+        <input class="entrada" id="email" name="email" type="email" placeholder="Email">
+        <input class="entrada" id="senha" name="senha" type="password" placeholder="Senha">
         <div>
         <input class="botoes" id="enviar" type="submit" placeholder="Teste">
         <input class="botoes" type="button" value="Criar conta" onclick="location.href='pageCadastro.php'">

@@ -218,7 +218,7 @@
     <div id="header">
         <div id="menu">
             <input class="botoes" id="Menu" type="button" onclick="location.href='index.php'" value="Menu">
-            <input class="botoes" id="logout" type="button" onclick="location.href='logout.php'" value="Deslogar">
+            <input class="botoes" id="logout" type="button" onclick="location.href='logout.php'" value="Sair">
         </div>
     </div>
 
