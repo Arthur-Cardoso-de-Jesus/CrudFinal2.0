@@ -1,20 +1,21 @@
-##CRUD DE TAREFAS
+## CRUD DE TAREFAS
 
-#trabalho final do curso técnico em infotmatica.
-
-
-##Tecnologias:
-
-#PHP
-#HTML
-#CSS
+### trabalho final do curso técnico em infotmatica.
 
 
-##Sobre o projeto:
+## Tecnologias:
 
-#realizar todos os processos de um crud, tendo como objetivo manejar tarefas e uauarios.
+PHP
+HTML
+CSS
+
+
+## Sobre o projeto:
+
+realizar todos os processos de um crud, tendo como objetivo manejar tarefas e uauarios.
 
 
 
 ### Autor:
-<a href="https://github.com/Arthur-Cardoso-de-Jesus
+
+<a href="https://github.com/Arthur-Cardoso-de-Jesus">Arthur Cardoso de Jesus</a>
